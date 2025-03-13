@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debate Assistant</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Debate Assistant</h1>
+      <p>
+        Enter a debate topic, and the AI will generate arguments,
+        counterarguments, and a summary.
+      </p>
+
+      <!-- Form for user input -->
+      <form method="POST">
+        <label for="topic">Debate Topic:</label>
+        <input
+          type="text"
+          id="topic"
+          name="topic"
+          placeholder="e.g., Climate change is the greatest threat to humanity"
+          required
+        />
+        <button type="submit">Generate Debate</button>
+      </form>
+
+      <!-- Display errors if any -->
+      {% if error %}
+      <div class="error"><strong>Error:</strong> {{ error }}</div>
+      {% endif %}
+
+      <!-- Display the debate response -->
+      {% if response %}
+      <div class="response">
+        <h2>Debate Topic: {{ topic }}</h2>
+        <pre>{{ response }}</pre>
+      </div>
+      {% endif %}
+    </div>
+  </body>
+</html>
