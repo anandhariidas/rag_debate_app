@@ -11,6 +11,13 @@
   </head>
   <body>
     <div class="container">
+      <!-- Logout Button -->
+      <div class="logout-container">
+        <form action="{{ url_for('logout') }}" method="GET">
+          <button type="submit" class="logout-button">Logout</button>
+        </form>
+      </div>
+
       <h1>Debate Assistant</h1>
       <p>
         Enter a debate topic, and the AI will generate arguments,

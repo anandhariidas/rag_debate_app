@@ -75,3 +75,23 @@ pre {
     word-wrap: break-word;
     margin: 0; /* Remove default margin */
 }
+
+/* Logout Button */
+.logout-container {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.logout-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.logout-button:hover {
+    background-color: #c9302c;
+}
