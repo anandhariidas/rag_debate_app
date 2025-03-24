@@ -69,8 +69,7 @@ rag_debate_env\Scripts\activate
 
 ---
 
-## 🐝 License
-This project is licensed under the **MIT License**. Feel free to use and modify it.
+
 
 ## 📱 Contact
 For questions or contributions, reach out at **anandhariidas@gmail.com** or create an issue in the repo.
