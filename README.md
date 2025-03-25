@@ -70,8 +70,4 @@ rag_debate_env\Scripts\activate
 ---
 
 
-
-## 📱 Contact
-For questions or contributions, reach out at **anandhariidas@gmail.com** or create an issue in the repo.
-
 Happy debating! 🎤🔥
